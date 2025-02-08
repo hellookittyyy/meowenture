@@ -1,0 +1,142 @@
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    /* padding-top: 10px; */
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 5px solid white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 35%;
+    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
+}
+
+h1{
+    font-family: "Karantina", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 64px;
+    align-items: center;
+    margin: 50px 0 50px;
+    color: #F2A6DB;
+}
+
+hr {
+    display: block;
+    border: 0;
+    border-radius: 15px;
+}
+
+#form hr{
+    width: 60%;
+    border-top: 2px solid #F2A6DB;
+}
+
+input{
+    width: 65%;
+    margin: 15px 0 5px;
+    padding: 6px 15px 6px;
+    border-color: #F2A6DB;
+    background-color: #F2A6DB;
+    border-style: solid;
+    border-radius: 25px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, .25);
+    color: white;
+    font-family: "Karantina", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+}
+
+::placeholder{
+    color: white;
+    font-family: "Karantina", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+}
+
+button {
+    border-radius: 25px;
+    font-family: "Karantina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    padding: 3px 0 3px;
+}
+
+#form button{
+    width: 25%;
+    border: 2px solid #F2A6DB;
+    background-color: #F2A6DB2B;
+    color: #F2A6DB;
+    margin: 20px 0 40px;
+}
+
+#form button:hover {
+    border: 2px solid #fccaec;
+    background-color: #F2A6DB;
+    color: #fdecf8;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 25%;
+    height: 65vh;
+    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-family: "Karantina", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 64px;
+    align-items: center;
+    color: #ffffff;
+    padding-bottom: 7px;
+}
+
+#info hr {
+    width: 40%;
+    border-top: 2px solid #ffffff;
+}
+
+p{
+    text-align: center;
+    font-family: "Karantina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: #ffffff;
+    padding: 7px 0 30px;
+}
+
+#info button {
+    width: 35%;
+    border: 2px solid #ffffff;
+    background-color: #FFFFFF2B;
+    color: #ffffff;
+}
+
+#info button:hover {
+    border: 2px solid #fe7bd7b1;
+    background-color: #ffffff;
+    color: #f2a6dbb4;
+    transition: 0.5s;
+    cursor: pointer;
+}
