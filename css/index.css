@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 80px 150px 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+section h1 {
+    font-family: "Karantina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 115px;
+    color: white;
+    letter-spacing: 6px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+section p {
+    font-family: "Karantina", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+section button {
+    font-family: "Karantina", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    color: #F2A6DB;
+    letter-spacing: 2px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 15px 25px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
