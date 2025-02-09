@@ -67,6 +67,10 @@ td {
     vertical-align: baseline;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* remember to define focus styles! */
 :focus {
     outline: 0;
