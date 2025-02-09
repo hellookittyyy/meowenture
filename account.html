@@ -21,10 +21,10 @@
       </nav>
     </header>
     <main>
-      <article>
+      <div class="user_menu">
         <h1>Welcome, User!</h1>
         <button>Skins shop</button>
-      </article>
+      </div>
       <div class="user_info">
         <div class="left">
           <img id="user_img" />
@@ -43,6 +43,53 @@
           <img />
           <img />
         </div>
+      </div>
+      <div class="achivements">
+        <arcticle>
+          <h4>Time in game:</h4>
+          <p>00:00:00</p>
+        </arcticle>
+        <arcticle>
+          <h4>Achivements:</h4>
+          <p>0/25</p>
+        </arcticle>
+        <arcticle>
+          <h4>Attempts:</h4>
+          <p>0</p>
+        </arcticle>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="text">Collection: Avatars</div>
+          <img src="./images/test_img.svg" />
+          <img src="./images/test_img.svg" />
+          <img src="./images/test_img.svg" />
+          <img src="./images/test_img.svg" />
+          <img src="./images/test_img.svg" />
+          <img src="./images/test_img.svg" />
+          <img src="./images/test_img.svg" />
+          <img src="./images/test_img.svg" />
+          <img src="./images/test_img.svg" />
+          <img src="./images/test_img.svg" />
+          <img src="./images/test_img.svg" />
+          <img src="./images/test_img.svg" />
+        </div>
+        <div class="mySlides fade">
+          <div class="text">Collection: Backgrounds</div>
+          <img src="./images/test2_img.svg" />
+          <img src="./images/test2_img.svg" />
+          <img src="./images/test2_img.svg" />
+          <img src="./images/test2_img.svg" />
+          <img src="./images/test2_img.svg" />
+          <img src="./images/test2_img.svg" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
       </div>
     </main>
   </body>
