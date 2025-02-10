@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -6,11 +10,9 @@ main {
 }
 
 .user_menu {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 88%;
     padding: 10px 0 20px;
 }
 
@@ -36,11 +38,9 @@ main {
 }
 
 .user_info {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #FFFFFF94;
-    width: 88%;
     align-items: center;
     padding: 10px 0;
     border: 3px solid white;
@@ -139,23 +139,156 @@ main {
 }
 
 .achivements {
-    display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 88.2%;
     margin-top: 20px;
 }
 
 .achivements arcticle {
     display: flex;
+    color: white;
+}
+
+.container{
+    width: 88%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.styled-block{
     background-color: #FFFFFF94;
     font-family: "Karantina", serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 36px;
+    letter-spacing: 2px;
     color: white;
     gap: 10px;
     padding: 10px;
     border: 3px solid white;
     border-radius: 8px;
 }
+
+.slider{
+    margin-top: 20px;
+    flex-direction: row;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.slide-container{
+    display: flex;
+    width: 200%;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+
+.slide-1{
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide-1 h2{
+    margin: 20px;
+    align-self: flex-start;
+    padding-left: 15px;
+}
+
+.slide-1-images{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px 40px;
+    width: 95%;
+    justify-items: center;
+}
+
+.slide-1 img{
+    width: 170px;
+}
+
+.slide-2{
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide-2 h2{
+    margin: 20px;
+    align-self: start;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+.slide-2-images {
+    /* margin-top: 20px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    justify-items: center;
+    /* grid-column-gap: 30px; */
+
+}
+
+.slide-2-images img {
+   height: 190px;
+   
+}
+
+.slider .left{
+    position: absolute;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    border-end-end-radius: 5px;
+    border-start-end-radius: 5px;
+    font-size: larger;
+    padding: 50px 0;
+}
+
+
+.slider .right{
+    position: absolute;
+    right: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    align-items: center;
+    border-start-start-radius: 5px;
+    border-end-start-radius: 5px;
+    font-size: larger;
+    padding: 50px 0;
+}
+
+.slider button{
+    top: 45%;
+    background-color: transparent;
+    transition: 400ms;
+    height: 35px;
+        width: 35px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+}
+
+    .slider button:hover{
+        background-color: #f2a6dbaa;
+    }
