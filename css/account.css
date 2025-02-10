@@ -9,12 +9,6 @@ main {
     justify-content: center;
 }
 
-#account a {
-    display: block !important;
-    border: 2px solid white !important;
-    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
-}
-
 .user_menu {
     flex-direction: row;
     justify-content: space-between;
@@ -152,16 +146,6 @@ main {
 
 .achivements arcticle {
     display: flex;
-    color: white;
-}
-
-.container {
-    width: 88%;
-    display: flex;
-    box-sizing: border-box;
-}
-
-.styled-block {
     background-color: #FFFFFF94;
     font-family: "Karantina", serif;
     font-weight: 600;
@@ -173,128 +157,4 @@ main {
     padding: 10px;
     border: 3px solid white;
     border-radius: 8px;
-}
-
-.slider {
-    margin-top: 20px;
-    flex-direction: row;
-    display: block;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.slide-container {
-    display: flex;
-    width: 200%;
-    box-sizing: border-box;
-    padding-bottom: 50px;
-}
-
-.slide-1 {
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.slide-1 h2 {
-    margin: 20px;
-    align-self: flex-start;
-    padding-left: 15px;
-}
-
-.slide-1-images {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px 40px;
-    width: 95%;
-    justify-items: center;
-}
-
-.slide-1 img {
-    width: 170px;
-}
-
-.slide-2 {
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.slide-2 h2 {
-    margin: 20px;
-    align-self: start;
-    padding-top: 30px;
-    padding-left: 15px;
-}
-
-.slide-2-images {
-    /* margin-top: 20px; */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    width: 100%;
-    justify-items: center;
-    /* grid-column-gap: 30px; */
-
-}
-
-.slide-2-images img {
-    height: 190px;
-
-}
-
-.slider .left {
-    position: absolute;
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    z-index: 1;
-    border-end-end-radius: 5px;
-    border-start-end-radius: 5px;
-    font-size: larger;
-    padding: 50px 0;
-}
-
-
-.slider .right {
-    position: absolute;
-    right: 0;
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    z-index: 1;
-    align-items: center;
-    border-start-start-radius: 5px;
-    border-end-start-radius: 5px;
-    font-size: larger;
-    padding: 50px 0;
-}
-
-.slider button {
-    top: 45%;
-    background-color: transparent;
-    transition: 400ms;
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.slider button:hover {
-    background-color: #f2a6dbaa;
 }
