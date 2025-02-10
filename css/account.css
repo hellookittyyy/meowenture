@@ -1,20 +1,20 @@
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.user_menu{
+.user_menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 88%;
-    padding:10px 0 20px;
+    padding: 10px 0 20px;
 }
 
-.user_menu h1{
+.user_menu h1 {
     font-family: "Karantina", serif;
     font-weight: 700;
     font-style: normal;
@@ -23,7 +23,7 @@ main{
     padding: 5px 0;
 }
 
-.user_menu a{
+.user_menu a {
     display: flex !important;
     border: 2px solid white !important;
     box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
@@ -35,7 +35,7 @@ main{
     padding: 4px 30px;
 }
 
-.user_info{
+.user_info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -47,35 +47,36 @@ main{
     border-radius: 8px;
 }
 
-.left{
+.left {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 
-.left img{
+.left img {
     width: 170px;
     padding-left: 20px;
 }
 
-.user_info_text{
+.user_info_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.user_info_text h2{
+.user_info_text h2 {
     font-family: "Karantina", serif;
     font-weight: 700;
     font-style: normal;
     font-size: 36px;
     color: white;
     padding: 5px 6px 15px;
-    text-shadow: -1px 3px 2px rgba(0, 0, 0, 0.25);;
+    text-shadow: -1px 3px 2px rgba(0, 0, 0, 0.25);
+    ;
 }
 
-.user_info_stats{
+.user_info_stats {
     display: flex;
     flex-direction: column;
     border-left: 4px solid white;
@@ -85,7 +86,7 @@ main{
     margin-bottom: 10px;
 }
 
-.user_info_stats label{
+.user_info_stats label {
     font-family: "Karantina", serif;
     font-weight: 400;
     font-style: normal;
@@ -94,7 +95,7 @@ main{
     padding: 5px 0;
 }
 
-.user_info_stats p{
+.user_info_stats p {
     font-family: "Karantina", serif;
     font-weight: 400;
     font-style: normal;
@@ -103,7 +104,7 @@ main{
     padding: 5px 0;
 }
 
-.progress{
+.progress {
     background-color: #F2A6DB;
     width: 250px;
     height: 20px;
@@ -112,7 +113,7 @@ main{
     box-shadow: inset -1px 3px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.progress-bar{
+.progress-bar {
     background-color: white;
     width: 20%;
     height: 20px;
@@ -123,12 +124,12 @@ main{
     display: flex;
 }
 
-.right img{
+.right img {
     height: 130px;
     margin-right: 20px;
 }
 
-.right p{
+.right p {
     font-family: "Karantina", serif;
     font-weight: 400;
     font-style: normal;
@@ -137,7 +138,7 @@ main{
     padding: 0 25px;
 }
 
-.achivements{
+.achivements {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -145,7 +146,7 @@ main{
     margin-top: 20px;
 }
 
-.achivements arcticle{
+.achivements arcticle {
     display: flex;
     background-color: #FFFFFF94;
     font-family: "Karantina", serif;
@@ -158,5 +159,3 @@ main{
     border: 3px solid white;
     border-radius: 8px;
 }
-
-
