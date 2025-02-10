@@ -9,6 +9,12 @@ main {
     justify-content: center;
 }
 
+#account a{
+    display: block !important;
+    border: 2px solid white !important;
+    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
+}
+
 .user_menu {
     flex-direction: row;
     justify-content: space-between;
