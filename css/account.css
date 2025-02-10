@@ -10,7 +10,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 88%;
     padding:10px 0 20px;
 }
 
@@ -21,14 +21,12 @@ main{
     font-size: 36px;
     color: white;
     padding: 5px 0;
-    margin-left: 90px;
 }
 
 .user_menu a{
     display: flex !important;
     border: 2px solid white !important;
     box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
-    margin-right: 90px;
     color: white;
     font-family: "Karantina", serif;
     font-weight: 300;
@@ -132,10 +130,33 @@ main{
 
 .right p{
     font-family: "Karantina", serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 30px;
-        color: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
     padding: 0 25px;
 }
+
+.achivements{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 88.2%;
+    margin-top: 20px;
+}
+
+.achivements arcticle{
+    display: flex;
+    background-color: #FFFFFF94;
+    font-family: "Karantina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: white;
+    gap: 10px;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 8px;
+}
+
 
