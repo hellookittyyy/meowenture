@@ -32,7 +32,6 @@ ul {
 li a{
     display: block !important;
     margin-right: 4px;
-    text-decoration: none;
     color: white;
     font-family: "Karantina", serif;
     font-weight: 300;
