@@ -1,0 +1,86 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1{
+    font-family: "Karantina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 86px;
+    color: white;
+    letter-spacing: 6px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.title hr{
+    width: 80%;
+    border: 2px solid white;
+}
+
+.title h3{
+    font-family: "Karantina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.leader_board table{
+    width: 60vw;
+    margin: 20px 0;
+    border: 2px solid white;
+    border-radius: 16px;
+    background-color:  #FFFFFF;
+    border-spacing: 20px;
+}
+
+.leader_board th{
+    font-family: "Karantina", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: #F2A6DB;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+.th{
+    border: 0 !important;
+    background-color: white !important;
+}
+
+.leader_board tr{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Karantina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    border: 2px solid #F2A6DB;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: left;
+    background-color: #F2A6DB99;
+    margin-bottom: 10px;
+} 
+
+.leader_board td{
+    font-family: "Karantina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
