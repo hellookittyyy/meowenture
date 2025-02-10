@@ -5,6 +5,12 @@ main {
     justify-content: center;
 }
 
+#leader_board a {
+    display: block !important;
+    border: 2px solid white !important;
+    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
+}
+
 header{
     padding-bottom: 20px !important; ;
 }
