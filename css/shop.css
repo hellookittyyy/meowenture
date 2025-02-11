@@ -2,23 +2,15 @@ body {
     overflow-x: hidden;
 }
 
+header{
+    padding: 30px 50px 30px;
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.user_menu a {
-    display: flex !important;
-    border: 2px solid white !important;
-    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
-    color: white;
-    font-family: "Karantina", serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 24px;
-    padding: 4px 30px;
 }
 
 .container {
@@ -42,7 +34,6 @@ main {
     overflow: hidden;
     padding: 0;
     position: relative;
-    margin-bottom: 30px;
 }
 
 .slide-container {
@@ -110,6 +101,7 @@ main {
     color: #fff;
     cursor: pointer;
     z-index: 1;
+    align-items: center;
     border-end-end-radius: 5px;
     border-start-end-radius: 5px;
     font-size: larger;
@@ -151,7 +143,8 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
+    width: 100%;
+    justify-content: space-between;
 }
 
 .slide-container h2{
@@ -164,7 +157,7 @@ main {
 }
 
 .title-1 h2 {
-    margin: 20px;
+    margin: 10px 20px;
     align-self: flex-start;
     padding-left: 15px;
 }
@@ -173,6 +166,7 @@ main {
     margin: 20px;
     align-self: flex-start;
     padding-left: 15px;
+    padding-top: 30px;
 }
 
 .slide-container h3{
@@ -182,4 +176,14 @@ main {
     font-size: 24px;
     letter-spacing: 2px;
     color: white;
+    padding-right: 17px;
+    margin: 20px;
+}
+
+.title-1 h3 {
+    padding-top: 15px;
+}
+
+.title-2 h3 {
+    padding-top: 40px;
 }
