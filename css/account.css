@@ -155,13 +155,13 @@ main {
     color: white;
 }
 
-.container{
+.container {
     width: 88%;
     display: flex;
     box-sizing: border-box;
 }
 
-.styled-block{
+.styled-block {
     background-color: #FFFFFF94;
     font-family: "Karantina", serif;
     font-weight: 600;
@@ -175,7 +175,7 @@ main {
     border-radius: 8px;
 }
 
-.slider{
+.slider {
     margin-top: 20px;
     flex-direction: row;
     display: block;
@@ -185,14 +185,14 @@ main {
     margin-bottom: 30px;
 }
 
-.slide-container{
+.slide-container {
     display: flex;
     width: 200%;
     box-sizing: border-box;
     padding-bottom: 50px;
 }
 
-.slide-1{
+.slide-1 {
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
@@ -202,13 +202,13 @@ main {
     flex-direction: column;
 }
 
-.slide-1 h2{
+.slide-1 h2 {
     margin: 20px;
     align-self: flex-start;
     padding-left: 15px;
 }
 
-.slide-1-images{
+.slide-1-images {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -218,11 +218,11 @@ main {
     justify-items: center;
 }
 
-.slide-1 img{
+.slide-1 img {
     width: 170px;
 }
 
-.slide-2{
+.slide-2 {
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
@@ -232,7 +232,7 @@ main {
     flex-direction: column;
 }
 
-.slide-2 h2{
+.slide-2 h2 {
     margin: 20px;
     align-self: start;
     padding-top: 30px;
@@ -252,11 +252,11 @@ main {
 }
 
 .slide-2-images img {
-   height: 190px;
-   
+    height: 190px;
+
 }
 
-.slider .left{
+.slider .left {
     position: absolute;
     border: 0;
     color: #fff;
@@ -269,7 +269,7 @@ main {
 }
 
 
-.slider .right{
+.slider .right {
     position: absolute;
     right: 0;
     border: 0;
@@ -283,18 +283,19 @@ main {
     padding: 50px 0;
 }
 
-.slider button{
+.slider button {
     top: 45%;
     background-color: transparent;
     transition: 400ms;
     height: 35px;
-        width: 35px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        font-weight: bold;
+    width: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
 }
 
-    .slider button:hover{
-        background-color: #f2a6dbaa;
-    }
+.slider button:hover {
+    background-color: #f2a6dbaa;
+}
+
