@@ -4,6 +4,12 @@ main{
     justify-content: space-between;
 }
 
+#about_us a {
+    display: block !important;
+    border: 2px solid white !important;
+    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
+}
+
 body {
     overflow-x: hidden;
 }
