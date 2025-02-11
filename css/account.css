@@ -152,17 +152,7 @@ main {
 
 .achivements arcticle {
     display: flex;
-    background-color: #FFFFFF94;
-    font-family: "Karantina", serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 36px;
-    letter-spacing: 2px;
     color: white;
-    gap: 10px;
-    padding: 10px;
-    border: 3px solid white;
-    border-radius: 8px;
 }
 
 .container {
@@ -308,3 +298,4 @@ main {
 .slider button:hover {
     background-color: #f2a6dbaa;
 }
+
