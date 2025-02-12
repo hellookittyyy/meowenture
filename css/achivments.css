@@ -157,6 +157,12 @@ main {
     margin-top: 20px;
 }
 
+.achivements div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .achivements arcticle {
     display: flex;
     color: white;
@@ -166,18 +172,34 @@ main {
     width: 88%;
     display: flex;
     box-sizing: border-box;
+    margin-bottom: 35px;
 }
 
 .styled-block {
     background-color: #FFFFFF94;
-    font-family: "Karantina", serif;
+    /* font-family: "Karantina", serif;
     font-weight: 600;
     font-style: normal;
     font-size: 36px;
     letter-spacing: 2px;
-    color: white;
+    color: white;  */
     gap: 10px;
     padding: 10px;
     border: 3px solid white;
     border-radius: 8px;
+}
+
+#title-achivements{
+    font-family: "Karantina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: white;
+    letter-spacing: 3px;
+    padding: 10px;
+
+}
+
+.achivment-info img{
+    width: 80px;
 }
