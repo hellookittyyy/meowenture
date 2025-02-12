@@ -177,14 +177,7 @@ main {
 
 .styled-block {
     background-color: #FFFFFF94;
-    /* font-family: "Karantina", serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 36px;
-    letter-spacing: 2px;
-    color: white;  */
-    gap: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     border: 3px solid white;
     border-radius: 8px;
 }
@@ -200,6 +193,40 @@ main {
 
 }
 
+.achivment-info{
+    background-color: #F2A6DB8A;
+    width: 95%;
+    border: 3px solid white;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.achivment-info h4{
+    font-family: "Karantina", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 3px;
+    padding: 0 20px;
+}
+
 .achivment-info img{
     width: 80px;
+}
+
+.achivements .sticks{
+    display: flex;
+    flex-direction: row;
+    background-color: #F2A6DB8A ;
+    width: 25px;
+    gap: 0 !important;
+    border: 3px solid white;
+    /* border-radius: 10px; */
+}
+
+.achivements .sticks:nth-last-child(1){
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
