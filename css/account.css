@@ -188,6 +188,7 @@ main {
 
 .styled-block h4 a:hover{
     color: #F2A6DB;
+    cursor: pointer;
 }
 
 .slider {
