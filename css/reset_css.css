@@ -111,3 +111,7 @@ blockquote,
 q {
     quotes: "" "";
 }
+
+*{
+    box-sizing: border-box;
+}
