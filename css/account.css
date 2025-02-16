@@ -171,7 +171,7 @@ main {
 .styled-block {
     background-color: #FFFFFF94;
     font-family: "Karantina", serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 36px;
     letter-spacing: 2px;
@@ -180,6 +180,14 @@ main {
     padding: 10px;
     border: 3px solid white;
     border-radius: 8px;
+}
+
+.styled-block h4 a{
+    color: white;
+}
+
+.styled-block h4 a:hover{
+    color: #F2A6DB;
 }
 
 .slider {
