@@ -182,14 +182,16 @@ main {
     border-radius: 8px;
 }
 
-.styled-block h4 a{
-    color: white;
-}
-
-.styled-block h4 a:hover{
+.styled-block h4 a:hover {
     color: #F2A6DB;
     cursor: pointer;
 }
+
+.styled-block h4 a {
+    color: white;
+}
+
+
 
 .slider {
     margin-top: 20px;
