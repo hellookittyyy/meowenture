@@ -126,14 +126,14 @@ h2 {
     border-top: 2px solid #ffffff;
 }
 
-p{
+#info p{
     text-align: center;
     font-family: "Karantina", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 36px;
     color: #ffffff;
-    padding: 7px 0 30px;
+    padding: 7px 20px 30px;
 }
 
 #info .button {
