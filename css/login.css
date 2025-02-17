@@ -87,7 +87,7 @@ form button{
     border: 2px solid #F2A6DB;
     background-color: #F2A6DB2B;
     color: #F2A6DB;
-    margin: 20px 0 40px;
+    margin: 15px 0 40px;
 }
 
 form button:hover {
@@ -148,5 +148,20 @@ p{
     background-color: #ffffff;
     color: #f2a6dbb4;
     transition: 0.5s;
+    cursor: pointer;
+}
+
+#change_password{
+    font-family: "Karantina", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 24px;
+    color: #f2a6dbb4;
+    padding: 5px 0 0;
+    letter-spacing: 1px;
+}
+
+#change_password:hover{
+    color: #f095d5;
     cursor: pointer;
 }
