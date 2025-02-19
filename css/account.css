@@ -317,3 +317,14 @@ main {
     background-color: #f2a6dbaa;
 }
 
+
+.box{
+    position: relative;
+    text-align: center;
+}
+
+.image_text{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
