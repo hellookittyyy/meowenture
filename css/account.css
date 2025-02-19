@@ -238,6 +238,7 @@ main {
 
 .slide-1 img {
     width: 170px;
+    filter: blur(3px);
 }
 
 .slide-2 {
@@ -271,6 +272,7 @@ main {
 
 .slide-2-images img {
     height: 190px;
+    filter: blur(3px);
 
 }
 
@@ -327,4 +329,7 @@ main {
     position: absolute;
     top: 8px;
     right: 16px;
+    font-size: 24px;
+    font-family: "Karantina", serif;
+    font-weight: 400;
 }
