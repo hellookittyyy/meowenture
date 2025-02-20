@@ -1,67 +1,82 @@
-@media(max-width: 900px){
-    
-    /* HEADER */
-    header{
-        padding: 30px 50px 30px;
-    }
+@media (max-width: 900px) {
+  /* HEADER */
+  header {
+    padding: 30px 50px 30px;
+  }
 
-    ul{
-        gap: 0;
-    }
+  ul {
+    gap: 0;
+  }
 
-    li a{
-        font-size: 32px;
-        padding: 0;
-        margin-left: 50px;
-    }
+  li a {
+    font-size: 32px;
+    padding: 0;
+    margin-left: 50px;
+  }
 
-    #logo a{
-        font-size: 32px;
-    }
+  #logo a {
+    font-size: 32px;
+  }
 
-    /* INDEX HTML */
+  /* INDEX HTML */
 
-    .index{
-        padding: 0;
-        align-items: center;
-    }
+  .index {
+    padding: 0;
+    align-items: center;
+  }
 
-    .index section{
-        margin-top: 270px;
-        gap: 5px;
-    }
+  .index section {
+    margin-top: 270px;
+    gap: 5px;
+  }
 
-    .index section p{
-        font-size: 35px;
-        font-weight: 200;
-        margin-bottom: 10px;
-    }
+  .index section p {
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 10px;
+  }
 
-    /* ABOUT US HTML */
-    .adventure{
-        display: none;
-    }
+  /* ABOUT US HTML */
+  .adventure {
+    display: none;
+  }
 
-    .about_us{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  .about_us {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .title{
-        width: 70%;
-    }
+  .title {
+    width: 70%;
+  }
 
-    .story{
-        width: 100%;
-    }
+  .story {
+    width: 100%;
+  }
 
-    .info{
-        width: 100%;
-    }
+  .info {
+    width: 100%;
+  }
 
-    #about_us a {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-} 
+  #about_us a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* HELP HTML */
+  #help a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .other_questions input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  .other_questions button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}
