@@ -3,7 +3,6 @@ main{
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    /* padding-top: 10px; */
 }
 
 #account a {
@@ -26,7 +25,7 @@ form{
     height: 65vh;
 }
 
-h1{
+.login-h1 {
     font-family: "Karantina", serif;
     font-weight: 600;
     font-style: normal;
@@ -111,7 +110,7 @@ form button:hover {
     box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
 }
 
-h2 {
+.login-h2 {
     font-family: "Karantina", serif;
     font-weight: 600;
     font-style: normal;
