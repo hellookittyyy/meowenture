@@ -151,7 +151,7 @@ h2 {
     cursor: pointer;
 }
 
-#change_password{
+#reset_password{
     font-family: "Karantina", serif;
     font-weight: 200;
     font-style: normal;
@@ -161,7 +161,15 @@ h2 {
     letter-spacing: 1px;
 }
 
-#change_password:hover{
+#reset_password:hover{
     color: #f095d5;
     cursor: pointer;
+}
+
+#description{
+    font-family: Karantina, serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 24px;
+    color: #F2A6DB;
 }
