@@ -41,6 +41,7 @@ main {
     font-style: normal;
     font-size: 24px;
     padding: 4px 30px;
+    letter-spacing: 2px;
 }
 
 .user_menu a:hover {
@@ -171,7 +172,7 @@ main {
 .styled-block {
     background-color: #FFFFFF94;
     font-family: "Karantina", serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     font-size: 36px;
     letter-spacing: 2px;
@@ -220,24 +221,19 @@ main {
     flex-direction: column;
 }
 
-.slide-1 h2 {
-    margin: 20px;
-    align-self: flex-start;
-    padding-left: 15px;
-}
-
 .slide-1-images {
-    margin-top: 20px;
+    margin-top: 5px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px 40px;
+    gap: 15px 30px;
     width: 95%;
     justify-items: center;
 }
 
 .slide-1 img {
-    width: 170px;
+    width: 180px;
+    filter: blur(3px);
 }
 
 .slide-2 {
@@ -250,27 +246,19 @@ main {
     flex-direction: column;
 }
 
-.slide-2 h2 {
-    margin: 20px;
-    align-self: start;
-    padding-top: 30px;
-    padding-left: 15px;
-}
-
 .slide-2-images {
-    /* margin-top: 20px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     width: 100%;
     justify-items: center;
-    /* grid-column-gap: 30px; */
 
 }
 
 .slide-2-images img {
     height: 190px;
+    filter: blur(3px);
 
 }
 
@@ -317,3 +305,56 @@ main {
     background-color: #f2a6dbaa;
 }
 
+
+.box{
+    position: relative;
+    text-align: center;
+}
+
+.image_text{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    font-family: "Karantina", serif;
+    font-weight: 400;
+}
+
+.title-1, .title-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.title-1 h2 {
+    margin: 0 20px;
+    align-self: flex-start;
+    padding-left: 15px;
+}
+
+.title-2 h2 {
+    margin: 20px;
+    align-self: flex-start;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+
+.title-1 h3, .title-2 h3 {
+    padding-right: 35px;
+    align-self: flex-end;
+}
+
+.title-2 h3 {
+    padding-bottom: 20px;
+}
+
+/* .title-1 h3{
+    padding-top: 10px;
+} */
+
+.title-1{
+    margin-top: 35px;
+    margin-bottom:25px;
+}
