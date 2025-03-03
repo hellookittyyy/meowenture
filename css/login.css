@@ -172,3 +172,31 @@ form button:hover {
     font-size: 24px;
     color: #F2A6DB;
 }
+
+/* CHANGE HERE */
+
+.message {
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+    font-family: "Karantina", serif;
+    font-size: 20px;
+}
+
+.message.error {
+    color: #ff4444;
+}
+
+.message.success {
+    color: #4CAF50;
+}
+
+.button.secondary {
+    background: transparent;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+
+.button.secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
