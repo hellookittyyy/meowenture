@@ -16,6 +16,12 @@
     <main>
       <div class="user_menu container">
         <h1 id="welcomeMessage">Welcome!</h1>
+        <div class="menu-buttons">
+          <label for="profileImageInput" class="btn btn-primary">Change Image</label>
+          <input type="file" id="profileImageInput" accept="image/*" style="display: none;" />
+          <button class="btn btn-primary" onclick="window.location.href='change_password.html'">Change Password</button>
+          <button class="btn btn-danger" id="logoutButton">Logout</button>
+        </div>
       </div>
 
       <div class="user_info container">

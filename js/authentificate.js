@@ -123,3 +123,67 @@ document.getElementById('registerButton')?.addEventListener('click', async funct
         messageElement.className = 'error';
     }
 });
+
+document.getElementById('loginButton')?.addEventListener('click', async function(event) {
+    event.preventDefault();
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+    const messageElement = document.getElementById('loginMessage');
+
+    if (!email || !password) {
+        messageElement.textContent = 'Email and password are required';
+        messageElement.className = 'error';
+        return;
+    }
+
+    try {
+        await loginUser(email, password);
+        messageElement.textContent = 'Login successful!';
+        messageElement.className = 'success';
+
+        document.getElementById('loginEmail').value = '';
+        document.getElementById('loginPassword').value = '';
+
+    } catch (error) {
+        messageElement.textContent = error.message || 'Invalid credentials';
+        messageElement.className = 'error';
+    }
+});
+
+async function checkLoginStatus() {
+    try {
+        const response = await authenticatedFetch(${API_URL}/api/profile/);
+        if (!response.ok) throw new Error('Not logged in');
+
+        if (window.location.pathname.endsWith('login.html')) {
+          window.location.href = 'account.html';
+      }
+        const data = await response.json();
+        // JUST CHECK FOR US
+        console.log(data.username);
+        console.log(data.email);
+
+        const welcomeMessage = document.getElementById('welcomeMessage');
+        if (welcomeMessage) {
+            welcomeMessage.textContent = Welcome, ${data.username}!;
+        }
+
+        const usernameDisplay = document.getElementById('usernameDisplay');
+        if (usernameDisplay) {
+            usernameDisplay.textContent = data.username;
+        }
+
+        const userImg = document.getElementById('user_img');
+        if (userImg && data.profile_image) {
+            userImg.src = getMediaUrl(data.profile_image);
+        }
+
+
+    } catch (error) {
+        console.error(error);
+        clearTokens();
+        if (window.location.pathname.endsWith('account.html')) {
+            window.location.href = 'login.html';
+        }
+    }
+}
