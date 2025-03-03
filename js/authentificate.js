@@ -81,3 +81,45 @@ function getMediaUrl(path) {
     if (path.startsWith('http')) return path;
     return `${API_URL}${path}`;
 }
+
+document.getElementById('registerButton')?.addEventListener('click', async function(event) {
+    event.preventDefault(); //FOR NOT REFRESH PAGE ETC
+    const username = document.getElementById('registerNickname').value;
+    const email = document.getElementById('registerEmail').value;
+    const password = document.getElementById('registerPassword').value;
+    const messageElement = document.getElementById('registerMessage');
+
+    if (!username || !email || !password) {
+        messageElement.textContent = 'All fields are required';
+        messageElement.className = 'error';
+        return;
+    }
+    
+    try {
+        const response = await fetch(`${API_URL}/api/register/`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username, email, password })
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+            messageElement.textContent = 'Registration successful! You can now login.';
+            messageElement.className = 'success';
+
+            document.getElementById('registerNickname').value = '';
+            document.getElementById('registerEmail').value = '';
+            document.getElementById('registerPassword').value = '';
+        } else {
+            messageElement.textContent = data.message || 'Registration failed';
+            messageElement.className = 'error';
+        }
+    } catch (error) {
+        console.error(error);
+        messageElement.textContent = 'An error occurred. Please try again.';
+        messageElement.className = 'error';
+    }
+});
