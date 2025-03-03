@@ -44,3 +44,34 @@ async function refreshAccessToken() {
         return false;
     }
 }
+
+async function authenticatedFetch(url, options = {}) {
+    const access = getAccessToken();
+    if (!access) {
+        throw new Error('No access token available');
+    }
+
+    const headers = {
+        ...options.headers,
+        'Authorization': `Bearer ${access}`,
+        'Content-Type': 'application/json'
+    };
+
+    try {
+        const response = await fetch(url, { ...options, headers });
+        
+        if (response.status === 401) {
+            const refreshed = await refreshAccessToken();
+            if (refreshed) {
+                headers.Authorization = `Bearer ${getAccessToken()}`;
+                return fetch(url, { ...options, headers });
+            } else {
+                throw new Error('Session expired');
+            }
+        }
+        
+        return response;
+    } catch (error) {
+        throw error;
+    }
+}
