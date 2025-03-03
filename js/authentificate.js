@@ -82,6 +82,26 @@ function getMediaUrl(path) {
     return `${API_URL}${path}`;
 }
 
+async function loginUser(email, password) {
+    const response = await fetch(`${API_URL}/api/token/`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password })
+    });
+
+    if (!response.ok) {
+        throw new Error('Invalid credentials');
+    }
+
+    const data = await response.json();
+    setTokens(data.access, data.refresh);
+    
+    // Redirect to account page after successful login
+    window.location.href = 'account.html';
+}
+
 document.getElementById('registerButton')?.addEventListener('click', async function(event) {
     event.preventDefault(); //FOR NOT REFRESH PAGE ETC
     const username = document.getElementById('registerNickname').value;
