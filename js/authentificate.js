@@ -75,3 +75,9 @@ async function authenticatedFetch(url, options = {}) {
         throw error;
     }
 }
+
+function getMediaUrl(path) {
+    if (!path) return null;
+    if (path.startsWith('http')) return path;
+    return `${API_URL}${path}`;
+}
