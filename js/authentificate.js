@@ -151,6 +151,14 @@ document.getElementById('loginButton')?.addEventListener('click', async function
 });
 
 async function checkLoginStatus() {
+    const access = getAccessToken();
+    if (!access) {
+        // If no token and we're on account page, redirect to login
+        if (window.location.pathname.endsWith('account.html')) {
+            window.location.href = 'login.html';
+        }
+        return;
+    }
     try {
         const response = await authenticatedFetch(`${API_URL}/api/profile/`);
         if (!response.ok) throw new Error('Not logged in');
