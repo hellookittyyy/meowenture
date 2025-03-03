@@ -123,3 +123,30 @@ document.getElementById('registerButton')?.addEventListener('click', async funct
         messageElement.className = 'error';
     }
 });
+
+async function loginUser(email, password) {
+    try {
+        const response = await fetch(${API_URL}/api/token/, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email, password }),
+        });
+
+        const data = await response.json();
+        console.log(data);
+
+        if (response.ok) {
+            localStorage.setItem('access_token', data.access);
+            localStorage.setItem('refresh_token', data.refresh);
+
+            window.location.href = 'account.html';
+        } else {
+            throw new Error(data.message || 'Login failed');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        throw error;
+    }
+}
