@@ -254,3 +254,72 @@ document.addEventListener('DOMContentLoaded', function() {
 
     checkLoginStatus();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const changePasswordForm = document.getElementById('changePasswordForm');
+    if (changePasswordForm) {
+        changePasswordForm.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const messageElement = document.getElementById('passwordMessage');
+            
+            const currentPassword = document.getElementById('currentPassword').value;
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            // Validate passwords match
+
+            if (!currentPassword || !newPassword) {
+              messageElement.textContent = 'Current password and new password are required';
+              messageElement.className = 'message error';
+              return;
+          }
+            if (newPassword !== confirmPassword) {
+                messageElement.textContent = 'New passwords do not match';
+                messageElement.className = 'message error';
+                return;
+            }
+            if (!currentPassword || !newPassword) {
+                messageElement.textContent = 'Current password and new password are required';
+                messageElement.className = 'message error';
+                return;
+            }
+            try {
+                const response = await fetch(`${API_URL}/api/change-password/`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${getAccessToken()}`
+                    },
+                    body: JSON.stringify({
+                        old_password: currentPassword,
+                        new_password: newPassword
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    setTokens(data.tokens.access, data.tokens.refresh);
+                    
+                    messageElement.textContent = 'Password changed successfully! Redirecting...';
+                    messageElement.className = 'message success';
+
+                    changePasswordForm.reset();
+
+                    setTimeout(() => {
+                        window.location.href = 'account.html';
+                    }, 2000);
+                } else {
+                    messageElement.textContent = data.message || 'Failed to change password';
+                    messageElement.className = 'message error';
+                }
+            } catch (error) {
+                console.error(error);
+                messageElement.textContent = 'An error occurred. Please try again.';
+                messageElement.className = 'message error';
+            }
+        });
+    }
+    
+    checkLoginStatus();
+});
