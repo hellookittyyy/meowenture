@@ -149,3 +149,41 @@ document.getElementById('loginButton')?.addEventListener('click', async function
         messageElement.className = 'error';
     }
 });
+
+async function checkLoginStatus() {
+    try {
+        const response = await authenticatedFetch(${API_URL}/api/profile/);
+        if (!response.ok) throw new Error('Not logged in');
+
+        if (window.location.pathname.endsWith('login.html')) {
+          window.location.href = 'account.html';
+      }
+        const data = await response.json();
+        // JUST CHECK FOR US
+        console.log(data.username);
+        console.log(data.email);
+
+        const welcomeMessage = document.getElementById('welcomeMessage');
+        if (welcomeMessage) {
+            welcomeMessage.textContent = Welcome, ${data.username}!;
+        }
+
+        const usernameDisplay = document.getElementById('usernameDisplay');
+        if (usernameDisplay) {
+            usernameDisplay.textContent = data.username;
+        }
+
+        const userImg = document.getElementById('user_img');
+        if (userImg && data.profile_image) {
+            userImg.src = getMediaUrl(data.profile_image);
+        }
+
+
+    } catch (error) {
+        console.error(error);
+        clearTokens();
+        if (window.location.pathname.endsWith('account.html')) {
+            window.location.href = 'login.html';
+        }
+    }
+}
