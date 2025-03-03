@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset_css.css" />
     <link rel="stylesheet" href="./css/login.css" />
     <script src="./js/page_load.js"></script>
+    <script src="./js/authentificate.js" defer></script>
   </head>
   <body>
     <header id="header"></header>
@@ -14,10 +15,11 @@
       <form>
         <h1 class="login-h1">Sign Up to Your Account</h1>
         <hr />
-        <input type="email" placeholder="Email" />
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button class="button">Sign up</button>
+        <p id="registerMessage"></p>
+        <input id="registerEmail" type="email" placeholder="Email" />
+        <input id="registerNickname" type="text" placeholder="Username" />
+        <input id="registerPassword" type="password" placeholder="Password" />
+        <button id="registerButton" class="button">Sign up</button>
       </form>
       <div id="info">
         <h2 class="login-h2">Old Here?</h2>
