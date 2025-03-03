@@ -323,3 +323,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     checkLoginStatus();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const logoutButton = document.getElementById('logoutButton');
+    if (logoutButton) {
+        logoutButton.addEventListener('click', function() {
+            clearTokens();
+            window.location.href = 'login.html';
+        });
+    }
+    checkLoginStatus();
+});
