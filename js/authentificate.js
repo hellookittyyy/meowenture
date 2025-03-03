@@ -152,7 +152,7 @@ document.getElementById('loginButton')?.addEventListener('click', async function
 
 async function checkLoginStatus() {
     try {
-        const response = await authenticatedFetch(${API_URL}/api/profile/);
+        const response = await authenticatedFetch(`${API_URL}/api/profile/`);
         if (!response.ok) throw new Error('Not logged in');
 
         if (window.location.pathname.endsWith('login.html')) {
@@ -165,7 +165,7 @@ async function checkLoginStatus() {
 
         const welcomeMessage = document.getElementById('welcomeMessage');
         if (welcomeMessage) {
-            welcomeMessage.textContent = Welcome, ${data.username}!;
+            welcomeMessage.textContent = `Welcome, ${data.username}!`;
         }
 
         const usernameDisplay = document.getElementById('usernameDisplay');
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('profile_image', file);
 
             try {
-                const response = await fetch(${API_URL}/api/profile/, {
+                const response = await fetch(`${API_URL}/api/profile/`, {
                     method: 'POST',
                     headers: {
                         'Authorization': ` Bearer ${getAccessToken()}`
