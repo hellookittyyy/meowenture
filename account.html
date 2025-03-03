@@ -6,6 +6,7 @@
     <title>meowenture</title>
     <link rel="stylesheet" href="./css/reset_css.css" />
     <link rel="stylesheet" href="./css/account.css" />
+    <script src="./js/authentificate.js"></script>
     <script src="./js/account.js" defer></script>
     <script src="./js/page_load.js"></script>
   </head>
@@ -14,15 +15,14 @@
 
     <main>
       <div class="user_menu container">
-        <h1>Welcome, User!</h1>
-        <a href="change_password.html">Change password</a>
+        <h1 id="welcomeMessage">Welcome!</h1>
       </div>
 
       <div class="user_info container">
         <div class="left">
           <img src="./images/test_img.png" id="user_img" />
           <div class="user_info_text">
-            <h2>Username</h2>
+            <h2 id="usernameDisplay">Username</h2>
             <div class="user_info_stats">
               <label>Progress: 20%</label>
               <div class="progress"><div class="progress-bar"></div></div>
