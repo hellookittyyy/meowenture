@@ -124,29 +124,28 @@ document.getElementById('registerButton')?.addEventListener('click', async funct
     }
 });
 
-async function loginUser(email, password) {
-    try {
-        const response = await fetch(${API_URL}/api/token/, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email, password }),
-        });
+document.getElementById('loginButton')?.addEventListener('click', async function(event) {
+    event.preventDefault();
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+    const messageElement = document.getElementById('loginMessage');
 
-        const data = await response.json();
-        console.log(data);
-
-        if (response.ok) {
-            localStorage.setItem('access_token', data.access);
-            localStorage.setItem('refresh_token', data.refresh);
-
-            window.location.href = 'account.html';
-        } else {
-            throw new Error(data.message || 'Login failed');
-        }
-    } catch (error) {
-        console.error('Error:', error);
-        throw error;
+    if (!email || !password) {
+        messageElement.textContent = 'Email and password are required';
+        messageElement.className = 'error';
+        return;
     }
-}
+
+    try {
+        await loginUser(email, password);
+        messageElement.textContent = 'Login successful!';
+        messageElement.className = 'success';
+
+        document.getElementById('loginEmail').value = '';
+        document.getElementById('loginPassword').value = '';
+
+    } catch (error) {
+        messageElement.textContent = error.message || 'Invalid credentials';
+        messageElement.className = 'error';
+    }
+});
