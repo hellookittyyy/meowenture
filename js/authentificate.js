@@ -187,3 +187,42 @@ async function checkLoginStatus() {
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const profileImageInput = document.getElementById('profileImageInput');
+    if (profileImageInput) {
+        profileImageInput.addEventListener('change', async function(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const formData = new FormData();
+            formData.append('profile_image', file);
+
+            try {
+                const response = await fetch(${API_URL}/api/profile/, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': ` Bearer ${getAccessToken()}`
+                    },
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    // Update the profile image
+                    const userImg = document.getElementById('user_img');
+                    if (userImg && data.profile_image) {
+                        userImg.src = getMediaUrl(data.profile_image);
+                    }
+                } else {
+                    console.error('Failed to update profile image:', data.message);
+                }
+            } catch (error) {
+                console.error('Error updating profile image:', error);
+            }
+        });
+    }
+
+    checkLoginStatus();
+});
