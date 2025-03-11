@@ -278,11 +278,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 messageElement.className = 'message error';
                 return;
             }
-            if (!currentPassword || !newPassword) {
-                messageElement.textContent = 'Current password and new password are required';
+            if (currentPassword == newPassword) {
+                messageElement.textContent = 'Current password and new password cant be similar';
                 messageElement.className = 'message error';
                 return;
             }
+
             try {
                 const response = await fetch(`${API_URL}/api/change-password/`, {
                     method: 'POST',
