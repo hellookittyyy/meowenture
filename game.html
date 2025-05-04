@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meowenture - Game</title>
+    <link rel="stylesheet" href="./css/reset_css.css" />
+    <link rel="stylesheet" href="./css/game.css" />
+    <script src="./js/media.js" defer></script>
+    <script src="./js/page_load.js"></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="game">
+      <div class="game-container">
+        <button id="fullscreenBtn" title="Toggle Fullscreen">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+          </svg>
+        </button>
+        <iframe src="http://localhost:8081/index.html">game not available</iframe>
+      </div>
+    </main>
+
+    <script>
+        const container = document.querySelector('.game-container');
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                container.requestFullscreen().catch(err => {
+                    console.log(`Error attempting to enable fullscreen: ${err.message}`);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        fullscreenBtn.addEventListener('click', toggleFullScreen);
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'F11') {
+                e.preventDefault();
+                toggleFullScreen();
+            }
+        });
+
+        document.addEventListener('fullscreenchange', () => {
+            container.classList.toggle('fullscreen', document.fullscreenElement !== null);
+        });
+    </script>
+  </body>
+</html>
