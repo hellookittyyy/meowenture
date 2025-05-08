@@ -5,19 +5,13 @@ main{
     gap: 10px;
 }
 
-#account a {
-    display: block !important;
-    border: 2px solid white !important;
-    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
-}
-
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    border: 5px solid white;
+    background-color: #97C3E3;
+    border: 5px solid #97C3E3;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     width: 35%;
@@ -32,7 +26,7 @@ form{
     font-size: 64px;
     align-items: center;
     margin: 50px 0 20px;
-    color: #F2A6DB;
+    color: #DB4592;
     text-align: center;
 }
 
@@ -44,15 +38,15 @@ hr {
 
 form hr{
     width: 60%;
-    border-top: 2px solid #F2A6DB;
+    border-top: 2px solid #DB4592;
 }
 
 input{
     width: 65%;
     margin: 15px 0 5px;
     padding: 6px 15px 6px;
-    border-color: #F2A6DB;
-    background-color: #F2A6DB;
+    border-color: #DB4592;
+    background-color: #DB4592;
     border-style: solid;
     border-radius: 25px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, .25);
@@ -83,16 +77,16 @@ input{
 
 form button{
     width: 25%;
-    border: 2px solid #F2A6DB;
-    background-color: #F2A6DB2B;
-    color: #F2A6DB;
+    border: 2px solid #DB4592;
+    background-color: #db45938a;
+    color: #de2e89;
     margin: 15px 0 40px;
 }
 
 form button:hover {
-    border: 2px solid #fccaec;
-    background-color: #F2A6DB;
-    color: #fdecf8;
+    border: 2px solid #f9aae0;
+    background-color: #de2e89;
+    color: #f9aae0;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -102,7 +96,8 @@ form button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 5px solid white;
+    border: 5px solid #97C3E3;
+    background-color: rgba(151, 195, 227, 0.66);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 25%;
@@ -116,13 +111,13 @@ form button:hover {
     font-style: normal;
     font-size: 64px;
     align-items: center;
-    color: #ffffff;
+    color: #252B48;
     padding-bottom: 7px;
 }
 
 #info hr {
     width: 40%;
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid #252B48;
 }
 
 #info p{
@@ -131,21 +126,21 @@ form button:hover {
     font-weight: 400;
     font-style: normal;
     font-size: 36px;
-    color: #ffffff;
+    color: #252B48;
     padding: 7px 20px 30px;
 }
 
 #info .button {
     width: 35%;
-    border: 2px solid #ffffff;
-    background-color: #FFFFFF2B;
-    color: #ffffff;
+    border: 2px solid #252B48;
+    background-color: rgba(37, 43, 72, 0.22);
+    color: #252B48;
 }
 
 #info .button:hover {
-    border: 2px solid #fe7bd7b1;
-    background-color: #ffffff;
-    color: #f2a6dbb4;
+    border: 2px solid #a5b2f2;
+    background-color: #252B48;
+    color: #a5b2f2;
     transition: 0.5s;
     cursor: pointer;
 }

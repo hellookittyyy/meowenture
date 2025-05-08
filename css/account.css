@@ -9,11 +9,6 @@ main {
     justify-content: center;
 }
 
-#account a {
-    display: block !important;
-    border: 2px solid white !important;
-    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
-}
 
 .user_menu {
     flex-direction: row;
@@ -45,7 +40,7 @@ main {
 }
 
 .user_menu a:hover {
-    background-color: #FFFFFF94;
+    background-color: #ffffff94;
     border: 2px solid #f17fcf91 !important;
     color: #f49eda;
     cursor: pointer;
@@ -54,10 +49,10 @@ main {
 .user_info {
     flex-direction: row;
     justify-content: space-between;
-    background-color: #FFFFFF94;
+    background-color: rgba(219, 69, 146, 0.6);
     align-items: center;
     padding: 10px 0;
-    border: 3px solid white;
+    border: 3px solid #DB4592;
     border-radius: 8px;
 }
 
@@ -170,7 +165,7 @@ main {
 }
 
 .styled-block {
-    background-color: #FFFFFF94;
+    background-color: rgba(219, 69, 146, 0.6);
     font-family: "Karantina", serif;
     font-weight: 400;
     font-style: normal;
@@ -179,7 +174,7 @@ main {
     color: white;
     gap: 10px;
     padding: 10px;
-    border: 3px solid white;
+    border: 3px solid #DB4592;
     border-radius: 8px;
 }
 
@@ -370,30 +365,33 @@ main {
 
 .btn {
     font-family: "Karantina", serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-size: 24px;
     padding: 4px 30px;
     letter-spacing: 2px;
-    border: 2px solid white;
+    border: 2px solid #97C3E3;
     box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
-    color: white;
+    color: #97C3E3;
     cursor: pointer;
     transition: all 0.3s ease;
     background: transparent;
+    background-color: rgba(0, 0, 0, 0.566);
 }
 
 .btn:hover {
-    background-color: #FFFFFF94;
+    background-color: #97C3E3;
     transform: translateY(-2px);
 }
 
 .btn-primary:hover {
-    border-color: #f17fcf91;
-    color: #f49eda;
+    border-color: #252B48;
+    color: #252B48;
+
 }
 
 .btn-danger:hover {
-    border-color: #ff4444;
-    color: #ff4444;
+    border-color: #d40909;
+    color: #ea0808;
+    background-color: #f87979;
 }

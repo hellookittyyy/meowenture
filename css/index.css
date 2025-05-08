@@ -4,6 +4,7 @@ main {
     align-items: end;
     padding: 80px 150px 0;
 }
+/* #e060a2 rgb(37 43 72); */
 
 section {
     display: flex;
@@ -15,21 +16,23 @@ section {
 
 section h1 {
     font-family: "Karantina", serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-    font-size: 115px;
-    color: white;
+    font-size: 135px;
+    color: #c23ca1;
     letter-spacing: 6px;
-    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 5px 5px 2px rgb(0, 0, 0);
 }
 
 section p {
     font-family: "Karantina", serif;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
     font-size: 24px;
-    color: white;
+    color: #830463;
+    background-color: #d05ab8b7;
     letter-spacing: 3px;
+    padding: 5px 50px;
 }
 
 section button {
@@ -37,10 +40,10 @@ section button {
     font-weight: 600;
     font-style: normal;
     font-size: 24px;
-    color: #F2A6DB;
+    color: #F1A5E5;
     letter-spacing: 2px;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
+    background-color: #370125;
+    border: 1px solid #370125;
     padding: 15px 25px;
     border-radius: 15px;
     text-transform: uppercase;

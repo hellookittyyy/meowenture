@@ -4,12 +4,6 @@ main{
     justify-content: space-between;
 }
 
-#about_us a {
-    display: block !important;
-    border: 2px solid white !important;
-    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
-}
-
 body {
     overflow-x: hidden;
 }
@@ -44,34 +38,36 @@ body {
     font-family: "Karantina", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 86px;
-    color: white;
+    font-size: 90px;
+    color: #c23ca1;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
     letter-spacing: 6px;
-    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .story hr{
     width: 40%;
-    border: 2px solid white;
+    border: 2px solid #BE4A9D;
 }
 
 .story h3{
     font-family: "Karantina", serif;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
-    font-size: 32px;
-    color: white;
+    font-size: 40px;
+    color: #252B48;
     letter-spacing: 3px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 2px 80px;
+    background-color: #6f82e1e7;
 }
 
 .info{
-    background-color: #FFFFFF99;
+    background-color: rgba(221, 57, 142, 0.837);
     width: 70%;
     display: flex;
     text-align: center;
     padding: 15px;
-    border: 3px solid white;
+    border: 3px solid #DB4592;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -82,8 +78,8 @@ body {
     font-family: "Karantina", serif;
     font-weight: 400;
     font-style: normal;
-    color: #F2A6DB;
-    font-size: 24px;
+    color: #fedbf0;
+    font-size: 30px;
     letter-spacing: 2px;
 }
 
@@ -96,12 +92,12 @@ body {
 }
 
 .team .member{
-    background-color: #FFFFFF99;
+    background-color: rgba(219, 69, 146, 0.6);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 3px solid white;
+    border: 3px solid #DB4592;
     border-radius: 6px;
     padding: 40px;
     margin-bottom: 20px;
@@ -121,15 +117,15 @@ body {
 }
 
 .role h3 {
-    background-color: #FFFFFF99;
-    border: 3px solid white;
+    background-color: rgba(219, 69, 146, 0.6);
+    border: 3px solid #DB4592;
     border-radius: 6px;
     font-family: "Karantina", serif;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
-    font-size: 32px;
-    color: #F2A6DB;
-    letter-spacing: 3px;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
 }
 
 .role h3:nth-last-child(2) {
@@ -145,9 +141,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF99;
+    background-color: rgba(219, 69, 146, 0.6);
     width: 80%;
-    border: 3px solid white;
+    border: 3px solid #DB4592;
     border-radius: 10px;
     /* padding: 70px 0 60px 0; */
 }
@@ -160,7 +156,7 @@ body {
     color: white;
     letter-spacing: 3px;
     margin: 25px 0 32px 0;
-    background-color: #F2A6DB8F;
+    background-color: rgba(242, 166, 219, 0.6);
     padding: 6px 20px;
     border: 3px solid #F2A6DB;
     border-radius: 10px;

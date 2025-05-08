@@ -5,11 +5,6 @@ main {
     justify-content: center;
 }
 
-#leaderboard a {
-    display: block !important;
-    border: 2px solid white !important;
-    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
-}
 
 header{
     padding-bottom: 20px !important; ;
@@ -27,32 +22,23 @@ header{
     font-weight: 400;
     font-style: normal;
     font-size: 86px;
-    color: white;
+    padding-top: 30px ;
+    color: #c23ca1;
     letter-spacing: 6px;
-    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 5px 5px 2px rgb(0, 0, 0);
 }
 
 .title hr{
     width: 80%;
-    border: 2px solid white;
-}
-
-.title h3{
-    font-family: "Karantina", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 36px;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    border: 2px solid #ce4bad;
 }
 
 .leader_board table{
     width: 50vw;
     margin: 20px 0;
-    border: 2px solid white;
+    border: 5px solid #252B48;
     border-radius: 16px;
-    background-color:  #FFFFFF;
+    background-color:  #97C3E3;
     border-spacing: 30px 10px;
 }
 
@@ -61,7 +47,7 @@ header{
     font-weight: 700;
     font-style: normal;
     font-size: 32px;
-    color: #F2A6DB;
+    color: #c2c2f4;
     padding: 10px;
     text-align: left;
     margin-left: 40px;
@@ -70,8 +56,9 @@ header{
 
 .th{
     border: 0 !important;
-    background-color: white !important;
+    background-color: #252b48da !important;
     padding: 0 !important;
+    border: 3px solid #485389 !important;
 }
 
 .leader_board tr{
@@ -81,11 +68,11 @@ header{
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
-    border: 2px solid #F2A6DB;
+    border: 2px solid #252B48;
     border-radius: 25px;
     padding: 2px;
     text-align: left;
-    background-color: #F2A6DB99;
+    background-color: #252b4899;
     margin-bottom: 10px;
 } 
 
@@ -103,7 +90,7 @@ header{
     font-family: "Karantina", serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    color: #ffffff;
     font-size: 28px;
     margin: 0 40px 0 10px;
     letter-spacing: 2px;

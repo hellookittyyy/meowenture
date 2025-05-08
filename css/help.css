@@ -5,12 +5,6 @@ main{
     justify-content: center;
 }
 
-#help a {
-    display: block !important;
-    border: 2px solid white !important;
-    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
-}
-
 .other_questions img{
     width: 30px;
 }
@@ -20,13 +14,14 @@ h1{
     font-weight: 600;
     font-style: normal;
     font-size: 64px;
-    color: white;
+    color: #c23ca1;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
     margin-bottom: 20px;
 }
 
 .container{
     display: flex;
-    background-color: #FFFFFF;
+    background-color: #97C3E3;
     align-items: center;
     justify-content: center;
     padding: 15px;
@@ -39,7 +34,7 @@ h1{
 
 .border{
     display: flex;
-    border: 3px solid #F2A6DB;
+    border: 3px solid #252B48;
     border-radius: 6px;
     padding: 25px;
     width: 100%;
@@ -66,8 +61,8 @@ h1{
     width: 100%;
     /* background-color: #f2a6db99; */
     /* border-radius: 6px; */
-    border-bottom: 2px solid #F2A6DB;
-    color: #F2A6DB;
+    border-bottom: 2px solid #252B48;
+    color: #252B48;
 }
 
 .faq summary {
@@ -75,7 +70,7 @@ h1{
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
-    color: #F2A6DB;
+    color: #252B48;
     padding: 0 10px 10px;
     cursor: pointer;
     align-items: center;
@@ -107,7 +102,7 @@ h1{
     font-weight: 200;
     font-style: normal;
     font-size: 26px;
-    color: #F2A6DB;
+    color: #252B48;
 }
 
 .other_questions {
@@ -119,13 +114,14 @@ h1{
 }
 
 .other_questions hr {
-    border: 2px solid #FFFFFF;
+    border: 2px solid #252B48;
     width: 50vw;
 }
 
 .other_questions h2 {
-    color: #FFFFFF;
-    font-size: 35px;
+    color: #c23ca1;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+    font-size: 48px;
     font-family: "Karantina", serif;
     font-weight: 400;
     font-style: normal;
@@ -153,7 +149,7 @@ h1{
     font-weight: 200;
     font-style: normal;
     font-size: 26px;
-    color: #F2A6DB;
+    color: #c23ca1;
 }
 
 .other_questions input::placeholder{
@@ -161,7 +157,7 @@ h1{
     font-weight: 200;
     font-style: normal;
     font-size: 26px;
-    color: #F2A6DB;
+    color: #c23ca1;
 }
 
 .other_questions button {

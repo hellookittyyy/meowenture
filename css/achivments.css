@@ -9,11 +9,6 @@ main {
     justify-content: center;
 }
 
-#account a {
-    display: block !important;
-    border: 2px solid white !important;
-    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.25);
-}
 
 .user_menu {
     flex-direction: row;
@@ -27,8 +22,10 @@ main {
     font-weight: 700;
     font-style: normal;
     font-size: 36px;
-    color: white;
     padding: 5px 0;
+    margin-top: 10px;
+    color: #c23ca1;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
 .user_menu a {
@@ -53,10 +50,10 @@ main {
 .user_info {
     flex-direction: row;
     justify-content: space-between;
-    background-color: #FFFFFF94;
+    background-color: rgba(219, 69, 146, 0.6);
     align-items: center;
     padding: 10px 0;
-    border: 3px solid white;
+    border: 3px solid #DB4592;
     border-radius: 8px;
 }
 
@@ -172,13 +169,13 @@ main {
     width: 88%;
     display: flex;
     box-sizing: border-box;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 
 .styled-block {
-    background-color: #FFFFFF94;
+    background-color: rgba(219, 69, 146, 0.6);
     padding: 10px 20px;
-    border: 3px solid white;
+    border: 3px solid #DB4592;
     border-radius: 8px;
 }
 
@@ -186,17 +183,18 @@ main {
     font-family: "Karantina", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 60px;
-    color: white;
+    font-size: 80px;
+    color: #c23ca1;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
     letter-spacing: 3px;
     padding: 10px;
 
 }
 
 .achivment-info{
-    background-color: #F2A6DB8A;
+    background-color: #DB4592;
     width: 95%;
-    border: 3px solid white;
+    border: 3px solid #F1A5E5;
     border-radius: 10px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -219,14 +217,18 @@ main {
 .achivements .sticks{
     display: flex;
     flex-direction: row;
-    background-color: #F2A6DB8A ;
+    background-color: #DB4592 ;
     width: 25px;
     gap: 0 !important;
-    border: 3px solid white;
+    border: 3px solid #F1A5E5;
     /* border-radius: 10px; */
 }
 
 .achivements .sticks:nth-last-child(1){
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+#footer{
+    padding-top: 30px;
 }
