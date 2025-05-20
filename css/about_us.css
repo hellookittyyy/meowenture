@@ -38,7 +38,7 @@ body {
     font-family: "Karantina", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 90px;
+    font-size: 100px;
     color: #c23ca1;
     text-shadow: 3px 3px 2px rgb(0, 0, 0);
     letter-spacing: 6px;
@@ -58,7 +58,7 @@ body {
     letter-spacing: 3px;
     margin-bottom: 20px;
     padding: 2px 80px;
-    background-color: #6f82e1e7;
+    background-color: #97C3E3;
 }
 
 .info{

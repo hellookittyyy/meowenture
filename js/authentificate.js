@@ -185,11 +185,11 @@ async function checkLoginStatus() {
 
         if (window.location.pathname.endsWith('login.html')) {
           window.location.href = 'account.html';
-      }
+        }
         const data = await response.json();
-        // JUST CHECK FOR US
         console.log(data.username);
         console.log(data.email);
+        console.log(data.coins);
 
         const welcomeMessage = document.getElementById('welcomeMessage');
         if (welcomeMessage) {
@@ -206,6 +206,11 @@ async function checkLoginStatus() {
             userImg.src = getMediaUrl(data.profile_image);
         }
 
+        // Set points balance
+        const pointsBalance = document.getElementById('points_balance');
+        if (pointsBalance) {
+            pointsBalance.textContent = `POINTS BALANCE: ${data.coins || 0}`;
+        }
 
     } catch (error) {
         console.error(error);

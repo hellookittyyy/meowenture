@@ -47,6 +47,17 @@
         document.addEventListener('fullscreenchange', () => {
             container.classList.toggle('fullscreen', document.fullscreenElement !== null);
         });
+
+        // Handle token requests from the game iframe
+        window.addEventListener('message', (event) => {
+            if (event.data && event.data.type === 'REQUEST_TOKEN') {
+                // Send the token back to the game
+                event.source.postMessage({
+                    type: 'TOKEN_RESPONSE',
+                    token: localStorage.getItem('access_token')
+                }, '*');
+            }
+        });
     </script>
   </body>
 </html>
